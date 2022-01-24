@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Concrete Material
-    second: {fileID: 2100000, guid: 268b548370950f74e84167d84ce22a04, type: 2}
+    second: {fileID: 2100000, guid: 9fb9c44871076dd498ccf75035f04be6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gravel Cobbel Ground Material
-    second: {fileID: 2100000, guid: 469dbec3fe9b80149b923dc72f740f3b, type: 2}
+    second: {fileID: 2100000, guid: 6cff43eecfd42274fbdca1cc540c92ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

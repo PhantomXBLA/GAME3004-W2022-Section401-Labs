@@ -14,7 +14,9 @@ public class PlayerBehaviour : MonoBehaviour
     public float groundRadius = 0.4f;
     public LayerMask groundMask;
     public bool isGrounded;
-    
+
+    public UIController uiController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,4 +54,13 @@ public class PlayerBehaviour : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            uiController.TakeDamage(5);
+        }
+    }
 }
+

@@ -148,7 +148,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 695
+    m_Bits: 1719
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -180,8 +180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2030b0a75d6988a45be7d03535d0ab2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSens: 10
+  sensitivity: 0.25
   playerBody: {fileID: 6772750815850226407}
+  rightJoystick: {fileID: 0}
 --- !u!1 &6772750815850225947
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +196,8 @@ GameObject:
   - component: {fileID: 6772750815850225945}
   - component: {fileID: 6772750815850226405}
   - component: {fileID: 6772750815850226406}
+  - component: {fileID: 1173557766}
+  - component: {fileID: 1173557765}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -311,6 +314,39 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   isGrounded: 0
+  uiController: {fileID: 0}
+  onScreenControls: {fileID: 0}
+  leftJoystick: {fileID: 0}
+--- !u!54 &1173557766
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772750815850225947}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &1173557765
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772750815850225947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.55
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &6772750815898187797
 GameObject:
   m_ObjectHideFlags: 0

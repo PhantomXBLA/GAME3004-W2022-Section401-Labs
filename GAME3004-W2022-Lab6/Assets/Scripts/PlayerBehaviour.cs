@@ -26,7 +26,12 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>(); 
+        controller = GetComponent<CharacterController>();
+
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            onScreenControls.SetActive(false);
+        }
     }
 
     // Update is called once per frame
